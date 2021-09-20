@@ -38,7 +38,7 @@ def filter_numbers(list_of_nums, key=None):
     elif key == PRIME:
         return list(filter(is_prime, list_of_nums))
     else:
-        return "Second argument is required and should be one of the following:\nODD\nEVEN"
+        return "Second argument is required and should be one of the following:\nODD\nEVEN\nPRIME"
 
 print(filter_numbers([1,2,3,4,5,6,7,8,9,10,11,12,13],EVEN))
 #print(is_prime(13))
