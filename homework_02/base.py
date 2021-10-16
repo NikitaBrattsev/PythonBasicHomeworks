@@ -14,18 +14,18 @@ class Vehicle(ABC):
                 self.started = True
                 print("Started")
             else:
-                raise LowFuelError
+                raise LowFuelError("Low fuel")
         else:
             print("Already started")
     def move(self,distace):
         if (self.fuel_consumption * distace > self.fuel):
-            raise NotEnoughFuel
+            raise NotEnoughFuel("Not enough fuel")
             
 
 
-# if __name__ == "__main__":
-#     car = Vehicle()
-#     #car.started = True
-#     #car.fuel = 0
-#     #car.start()
-#     car.move(50)
+if __name__ == "__main__":
+    car = Vehicle()
+    #car.started = True
+    car.fuel = 0
+    car.start()
+    car.move(50)

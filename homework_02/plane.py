@@ -17,7 +17,7 @@ class Plane(Vehicle):
 
     def load_cargo(self,additional_load: int):
         if additional_load + self.cargo > self.max_cargo:
-            raise CargoOverload
+            raise CargoOverload("Plane is overloaded!")
         self.cargo = self.cargo + additional_load
 
     def remove_all_cargo(self):
