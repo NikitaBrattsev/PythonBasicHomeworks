@@ -5,15 +5,15 @@ from base import Vehicle
 from engine import Engine
 
 
-class Car(Vehicle):
+class Car(Vehicle,Engine):
 
     def __init__(self):
         super(Car,self).__init__()
-    engine: Engine
+    #engine: Engine
     def set_engine(self,value,pistons):
         self.engine = Engine(value,pistons)
 
-# if __name__ == "__main__":
-#     car = Car()
-#     car.set_engine(3,4)
-#     print(car.engine)
+ #if __name__ == "__main__":
+car = Car()
+car.set_engine(3,4)
+print(car.engine)
