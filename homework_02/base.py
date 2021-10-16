@@ -3,10 +3,10 @@ from exceptions import LowFuelError, NotEnoughFuel
 
 class Vehicle(ABC):
     started = False
-    def __init__(self):
-        self.weight = 2000
-        self.fuel = 100
-        self.fuel_consumption = 10
+    def __init__(self,weight=2000,fuel=100,fuel_consumption=10):
+        self.weight = weight
+        self.fuel = fuel
+        self.fuel_consumption = fuel_consumption
 
     def start(self):
         if not self.started:
