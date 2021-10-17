@@ -25,9 +25,9 @@ class Vehicle(ABC):
             raise NotEnoughFuel("Not enough fuel")
 
 
-if __name__ == "__main__":
-    car = Vehicle()
-    # car.started = True
-    car.fuel = 0
-    car.start()
+# if __name__ == "__main__":
+    # car = Vehicle()
+    # # car.started = True
+    # car.fuel = 0
+    # car.start()
     # car.move(50)

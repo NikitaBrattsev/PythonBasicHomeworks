@@ -26,12 +26,12 @@ class Plane(Vehicle):
 # if __name__ == "__main__":
 #     plane = Plane(50)
 #     print(plane)
-    # print("Max cargo: ", plane.max_cargo)
-    # plane.cargo = 5
-    # plane.load_cargo(2)
-    # print("cargo loaded: ", plane.cargo)
-    # plane.remove_all_cargo()
-    # print("Cargo removed:", plane.cargo)
-    # print(plane.weight)
-    # plane.weight = 5000
+#     print("Max cargo: ", plane.max_cargo)
+#     plane.cargo = 5
+#     plane.load_cargo(2)
+#     print("cargo loaded: ", plane.cargo)
+#     plane.remove_all_cargo()
+#     print("Cargo removed:", plane.cargo)
+#     print(plane.weight)
+#     plane.weight = 5000
     

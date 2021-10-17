@@ -5,15 +5,19 @@ from homework_02.base import Vehicle
 from homework_02.engine import Engine
 
 
-class Car(Vehicle,Engine):
+class Car(Vehicle):
+    engine: None
 
-    def __init__(self):
-        super(Car,self).__init__()
-    #engine: Engine
-    def set_engine(self,value,pistons):
-        self.engine = Engine(value,pistons)
+    def __init__(self, weight, fuel, fuel_consumption):
+        super(Car, self).__init__(weight, fuel, fuel_consumption)
 
- #if __name__ == "__main__":
-car = Car()
-car.set_engine(3,4)
-print(car.engine)
+    # engine: Engine
+    def set_engine(self, engine):
+        self.engine = engine
+
+
+# if __name__ == "__main__":
+#     engine = Engine(3, 4)
+#     car = Car(5, 100, 10)
+#     car.set_engine(engine)
+#     print(car.engine)
