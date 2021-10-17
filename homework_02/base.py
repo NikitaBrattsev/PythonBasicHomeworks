@@ -23,11 +23,12 @@ class Vehicle(ABC):
     def move(self, distance):
         if self.fuel_consumption * distance > self.fuel:
             raise NotEnoughFuel("Not enough fuel")
-
+        self.fuel -= self.fuel_consumption * distance
 
 # if __name__ == "__main__":
-    # car = Vehicle()
-    # # car.started = True
-    # car.fuel = 0
-    # car.start()
-    # car.move(50)
+#     car = Vehicle()
+#     # car.started = True
+#     car.fuel = 100
+#     car.start()
+#     car.move(4)
+#     print(car.fuel)
