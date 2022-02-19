@@ -1,7 +1,9 @@
+from random import randint
+
 from flask import Flask
 from views.index import my_app
 
-
+randint
 app = Flask(__name__)
 app.register_blueprint(my_app, url_prefix='/')
 
